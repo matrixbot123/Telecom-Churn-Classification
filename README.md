@@ -1,4 +1,5 @@
 # Telecom Churn Classification Report
+My kaggle Notebook link  : https://www.kaggle.com/code/shubhamkumar08/churn-classifier/
 > What is Chrun ?
 
 
