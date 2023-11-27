@@ -69,6 +69,8 @@ It is a huge matrix with too many features. We will check the correlation only w
 
 In the Churn-specific correlation analysis, numerous features are identified as irrelevant, falling within the range of (-0.1, 0.1). These features can be safely considered for removal, streamlining the dataset for more focused and meaningful analysis.
 
+![churn specific correlation](https://imgur.com/a/h9MCACE)
+
 Using Churn-specific correlation analysis, the features `"MultipleLines," "PhoneService," "gender," "StreamingTV," "StreamingMovies," and "InternetService"` were identified as irrelevant and subsequently removed
 
 - ### Data Balancing using SMOTE
