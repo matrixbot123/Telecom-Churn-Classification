@@ -114,10 +114,10 @@ And the thier cross validation score and ROC-AUC are
 ##### So, XGBoost is the optimal choice due to its highest AUC-ROC, indicating superior ability in distinguishing churn and non-churn cases, coupled with a top-performing Cross Validation Score, affirming its overall effectiveness for precise customer churn prediction in telecommunication.
 So, we use grid search to further optimize the parameters of XGBoost.
 ### Before Grid Search
-![](images/s6.jpg)
+![](./images/s6.jpg)
 
 ### After Grid Search
-![](images/s5.jpg)
+![](./images/s5.jpg)
 ## Conculsion
 
 
