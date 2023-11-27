@@ -28,16 +28,18 @@ That's why I have not used mean/median to fill it.
 
 The dataset is unbalanced ( which is fixed in feature engineering ). 
 
+![](images/s4.jpg)
+
 Begin by obtaining a basic understanding of your dataset.
 Here I have chosen to focus on the distribution of **monthly payment** and **tenure** for plotting, as these are the only features with numerical variability (int/float) in contrast to the other features, which predominantly present as binary or categorical options
-
+![](images/s3.jpg)
 - **Customer Tenure Distribution** is bi-modal, with peaks at 1-5 months and around 70 months. This indicates a significant turnover of new customers and a strong, loyal customer base, contributing to overall tenure diversity.
 
 - **Monthly Charges Distribution** exhibits wide variability, with a peak around 20, indicating a significant segment with basic, lower-cost services. Another concentration is seen at higher charges (around 70-90), suggesting customers with more comprehensive plans. This diverse distribution reflects the range of pricing options and service plans available to customers.
 
 2.**Univariate Analysis** :  the relationship between a target variable (in this case, churn) and individual features. In univariate analysis, each feature is examined in isolation to understand its distribution and characteristics.
 >  ###  Numerical Data 
-
+![](images/s2.jpg)
 * Higher churn rates are observed among customers with lower tenure (0-12 months), decreasing significantly as tenure increases, indicating a trend of increased loyalty over time.
 
 * 'Churn vs Monthly Charges' displays a diverse distribution, with a notable peak at lower charges, suggesting a substantial segment of customers preferring basic and lower-cost services.
@@ -68,8 +70,7 @@ A correlation matrix is a fundamental tool in statistical analysis and data expl
 It is a huge matrix with too many features. We will check the correlation only with respect to Churn 
 
 In the Churn-specific correlation analysis, numerous features are identified as irrelevant, falling within the range of (-0.1, 0.1). These features can be safely considered for removal, streamlining the dataset for more focused and meaningful analysis.
-
-![Igmur Image](https://imgur.com/a/h9MCACE.jpg)
+![](images/s1.jpg)
 
 Using Churn-specific correlation analysis, the features `"MultipleLines," "PhoneService," "gender," "StreamingTV," "StreamingMovies," and "InternetService"` were identified as irrelevant and subsequently removed
 
@@ -112,7 +113,11 @@ And the thier cross validation score and ROC-AUC are
 
 ##### So, XGBoost is the optimal choice due to its highest AUC-ROC, indicating superior ability in distinguishing churn and non-churn cases, coupled with a top-performing Cross Validation Score, affirming its overall effectiveness for precise customer churn prediction in telecommunication.
 So, we use grid search to further optimize the parameters of XGBoost.
+### Before Grid Search
+![](images/s6.jpg)
 
+### After Grid Search
+![](images/s5.jpg)
 ## Conculsion
 
 
